@@ -179,7 +179,7 @@ header .right ul {
     margin: 0;
   }
 
-  .project :hover {
+  .project:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
   }
@@ -519,6 +519,7 @@ color: var(--white)
   .clients-icon-background:hover,
   .clients-icon-background:focus {
     border-color: var(--blue);
+    cursor: pointer;
   }
 
   .regular-clients-container{
@@ -531,7 +532,8 @@ color: var(--white)
     ;
   }
  
-  .client-icon:hover
+  .client-icon:hover,
   .client-icon:focus{
-    fill:var(--blue)
+    fill:var(--blue);
+    cursor:pointer;
   }

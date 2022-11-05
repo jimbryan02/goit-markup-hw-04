@@ -477,9 +477,13 @@ color: var(--white)
     height: 20px;
     fill: var(--gray3);
   }
-
-  .staff-social-icon:hover,
-  .staff-social-icon:focus{
+  .staff-icon-container:hover,
+  .staff-icon-container:focus{
+    background-color: var(--blue);
+    cursor: pointer;
+  }
+  .staff-icon-container:hover .staff-social-icon,
+  .staff-icon-container:focus .staff-social-icon{
     fill: var(--white);
   }
 
@@ -494,11 +498,7 @@ color: var(--white)
     border-radius: 50%;
   }
 
-  .staff-icon-container:hover,
-  .staff-icon-container:focus{
-    background-color: var(--blue);
-    cursor: pointer;
-  }
+  
 
   .clients-icon-background{
     display: flex;
@@ -517,9 +517,10 @@ color: var(--white)
   }
 
   .clients-icon-background:hover,
-  .clients-icon-background:focus {
+  .clients-icon-background:focus{
     border-color: var(--blue);
     cursor: pointer;
+    fill:var(--blue);
   }
 
   .regular-clients-container{
@@ -529,11 +530,10 @@ color: var(--white)
   
   .client-icon{
     fill: #AFB1B8;
-    ;
   }
  
-  .client-icon:hover,
-  .client-icon:focus{
+  .clients-icon-background:hover .client-icon,
+  .clients-icon-background:focus .client-icon {
     fill:var(--blue);
-    cursor:pointer;
   }
+  
